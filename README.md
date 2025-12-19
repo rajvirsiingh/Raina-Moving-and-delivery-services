@@ -1,16 +1,85 @@
-# React + Vite
+# Raina Movers & Delivery Services 🚚
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Raina Movers & Delivery Services is a modern, responsive website built using **React + Vite** for a Brisbane-based moving company. The website showcases professional moving and delivery services, company experience, customer testimonials, and allows users to request a free moving quote.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Preview
 
-## React Compiler
+https://raina-movers-and-delivery.netlify.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Built with **React** and **Vite** for fast performance
+- Component-based architecture
+- Responsive design (mobile-first)
+- Professional landing page UI
+- Services and testimonials sections
+- Quote request form
+- SEO-friendly content for local Brisbane searches
+- Clean and scalable project structure
+
+---
+
+## 🏢 About Raina Movers
+
+Raina Movers is a trusted moving company based in **Brisbane, Australia**, with over **10 years of industry experience**.
+
+### Company Highlights
+
+- ✅ 100% insured moves
+- ✅ 1000+ satisfied customers
+- ✅ 24/7 customer support
+- ✅ Residential & commercial relocations
+
+---
+
+## 🛠️ Services Offered
+
+- **Packing Services**
+- **Transportation**
+- **Residential Moving**
+- **Commercial Moving**
+- **Food Delivery**
+- **Package Handling**
+
+Each service is presented clearly to help users understand offerings and request a quote quickly.
+
+---
+
+## ⚙️ Tech Stack
+
+- **React**
+- **Vite**
+- **JavaScript (ES6+)**
+- **HTML5**
+- **CSS3**
+- **Google Fonts**
+
+_(Update if you are using Tailwind CSS, Bootstrap, or any UI library.)_
+
+---
+
+## 📁 Project Structure
+
+```bash
+raina-movers/
+├── public/
+│   └── logo.png
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Services.jsx
+│   │   ├── Testimonials.jsx
+│   │   ├── QuoteForm.jsx
+│   │   └── Footer.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── package.json
+└── README.md
+```
