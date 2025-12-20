@@ -1,60 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      phone: e.target.phone.value,
+      message: e.target.message.value,
+    };
+
+    try {
+      const res = await fetch("https://formspree.io/f/mnjaddlp", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setStatus("Thanks! We’ll contact you within 24 hours.");
+        e.target.reset();
+      } else {
+        setStatus("Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      setStatus("Network error. Please try again.");
+      console.error(err);
+    }
+  };
+
   return (
     <section className="quote-section" id="contact">
       <h2>Get Your Free Quote</h2>
       <p>Fill out the form below and we’ll get back to you within 24 hours</p>
 
       <div className="quote-container">
-        <form className="quote-form">
+        <form className="quote-form" onSubmit={handleSubmit}>
           <h3>Request a Quote</h3>
           <p>Tell us about your moving needs</p>
 
           <label>Full Name</label>
-          <input type="text" placeholder="John Doe" />
+          <input type="text" name="name" required />
 
           <label>Email</label>
-          <input type="email" placeholder="john@example.com" />
+          <input type="email" name="email" required />
 
           <label>Phone Number</label>
-          <input type="text" placeholder="(555) 123-4567" />
+          <input type="text" name="phone" />
 
           <label>Moving Details</label>
-          <textarea placeholder="Tell us about your move - dates, locations, size of move, etc."></textarea>
+          <textarea name="message" required />
 
           <button type="submit">Submit Request</button>
+
+          {status && <p style={{ marginTop: "10px" }}>{status}</p>}
         </form>
-
-        <div className="contact-info">
-          <div className="contact-card">
-            <i className="fa fa-phone-square" aria-hidden="true"></i>
-            <div>
-              <h4>Phone</h4>
-              <a href="#">(043) 108-6577</a>
-            </div>
-          </div>
-
-          <div className="contact-card">
-            <i className="fa fa-envelope" aria-hidden="true"></i>
-            <div>
-              <h4>Email</h4>
-              <a href="#">sarabjtsngh@gmail.com</a>
-            </div>
-          </div>
-
-          <div className="contact-card">
-            <i className="fa fa-map-marker" aria-hidden="true"></i>
-            <div>
-              <h4>Office</h4>
-              <p>
-                123 Moving Street
-                <br />
-                Brisbane, QLD 4000
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
