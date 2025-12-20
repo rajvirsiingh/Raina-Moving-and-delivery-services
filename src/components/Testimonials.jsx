@@ -2,7 +2,7 @@ import React from "react";
 
 const Testimonials = () => {
   return (
-    <section className="testimonials-section">
+    <section className="testimonials-section" id="testimonials">
       <h2>What Our Clients Say</h2>
       <div className="testimonials-container">
         <div className="testimonial-card">

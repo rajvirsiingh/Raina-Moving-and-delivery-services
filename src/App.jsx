@@ -5,11 +5,12 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
-import logo from "./assets/logo-raina-movers.png";
+import Nav from "./components/Nav";
+
 function App() {
   return (
     <>
-      <img src={logo} alt="Raina Movers Logo" className="logo" />
+      <Nav />
       <Header />
       <About />
       <Services />

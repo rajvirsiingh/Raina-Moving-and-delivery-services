@@ -2,7 +2,7 @@ import React from "react";
 import movingTruck from "../assets/man-loading-moving-truck.jpg";
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container" id="about">
       <section>
         <img src={movingTruck} alt="Moving Truck" />
       </section>

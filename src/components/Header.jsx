@@ -1,19 +1,23 @@
 import React from "react";
-import Nav from "./Nav";
 
 const Header = () => {
   return (
     <header>
-      <Nav />
       <section>
         <h1>
-          Raina Movers and Delivery Services – Expert Home & Office Relocations
+          Your Trusted Moving Company for Seamless Relocations and Reliable
+          Delivery Services in Brisbane and Gold Coast.
         </h1>
-        <p>
-          Your Trusted Brisbane Moving Company for Seamless Relocations and
-          Reliable Delivery Services
-        </p>
-        <button>Get a Quote</button>
+        <button
+          onClick={() =>
+            window.scrollTo({
+              top: document.getElementById("contact").offsetTop,
+              behavior: "smooth",
+            })
+          }
+        >
+          Get a Quote
+        </button>
       </section>
     </header>
   );

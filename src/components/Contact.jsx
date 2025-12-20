@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="quote-section">
+    <section className="quote-section" id="contact">
       <h2>Get Your Free Quote</h2>
       <p>Fill out the form below and we’ll get back to you within 24 hours</p>
 

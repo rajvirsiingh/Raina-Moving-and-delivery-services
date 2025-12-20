@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section className="services-container">
+    <section className="services-container" id="services">
       <h2>Our Services</h2>
       <p>Details about the services offered will go here.</p>
       <div className="services-list-container">
@@ -67,6 +67,16 @@ const Services = () => {
             <p>
               We offer secure and efficient package handling services for all
               your shipping needs.
+            </p>
+          </div>
+        </div>
+        <div className="service-item">
+          <i className="fa fa-trash" aria-hidden="true"></i>
+          <div className="service-item-text">
+            <h3>Garbage Removal</h3>
+            <p>
+              Declutter your space with our reliable garbage removal services.
+              We handle waste disposal efficiently and responsibly.
             </p>
           </div>
         </div>
