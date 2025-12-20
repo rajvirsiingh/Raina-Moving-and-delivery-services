@@ -31,7 +31,7 @@ const Contact = () => {
             <i className="fa fa-phone-square" aria-hidden="true"></i>
             <div>
               <h4>Phone</h4>
-              <a href="#">(555) 123-4567</a>
+              <a href="#">(043) 108-6577</a>
             </div>
           </div>
 
@@ -39,7 +39,7 @@ const Contact = () => {
             <i className="fa fa-envelope" aria-hidden="true"></i>
             <div>
               <h4>Email</h4>
-              <a href="#">info@swiftmove.com</a>
+              <a href="#">sarabjtsngh@gmail.com</a>
             </div>
           </div>
 
@@ -50,7 +50,7 @@ const Contact = () => {
               <p>
                 123 Moving Street
                 <br />
-                New York, NY 10001
+                Brisbane, QLD 4000
               </p>
             </div>
           </div>

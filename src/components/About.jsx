@@ -9,11 +9,11 @@ const About = () => {
       <section>
         <h2>About Raina Movers and Delivery services</h2>
         <p>
-          Raina Movers is a leading moving company based in Brisbane, Australia.
-          With over a decade of experience in the industry, we specialize in
-          providing top-notch residential and commercial moving services. Our
-          mission is to make every move a smooth and hassle-free experience for
-          our clients.
+          Raina Movers is a leading moving company based in Brisbane and Gold
+          Coast, Australia. With over a decade of experience in the industry, we
+          specialize in providing top-notch residential and commercial moving
+          services. Our mission is to make every move a smooth and hassle-free
+          experience for our clients.
         </p>
         <p>
           At Raina Movers, we understand that moving can be a stressful time.
